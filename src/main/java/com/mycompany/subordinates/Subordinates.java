@@ -4,6 +4,13 @@ package com.mycompany.subordinates;
 import java.util.*;
 
 public class Subordinates {
+    
+    static void dfs(int nodo, ArrayList<Integer>[] hijos, int[] subordinados) {
+    for (int h : hijos[nodo]) {
+        dfs(h, hijos, subordinados);
+        subordinados[nodo] += 1 + subordinados[h];
+    }
+}
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,6 +33,8 @@ public class Subordinates {
            }
         
         int[] subordinados = new int[n + 1];
+        
+        dfs(1, hijos, subordinados);
 
     }
 }
