@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.mycompany.subordinates;
 
-/**
- *
- * @author Estudiante
- */
+import java.util.*;
+
 public class Subordinates {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
     }
 }
