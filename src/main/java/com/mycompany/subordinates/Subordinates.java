@@ -35,6 +35,10 @@ public class Subordinates {
         int[] subordinados = new int[n + 1];
         
         dfs(1, hijos, subordinados);
+        
+        for (int i = 1; i <= n; i++) {
+    System.out.print(subordinados[i] + " ");
+     }
 
     }
 }
