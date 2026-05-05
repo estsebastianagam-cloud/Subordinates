@@ -24,6 +24,8 @@ public class Subordinates {
         for (int i = 2; i <= n; i++) {
             hijos[jefe[i]].add(i);
            }
+        
+        int[] subordinados = new int[n + 1];
 
     }
 }
